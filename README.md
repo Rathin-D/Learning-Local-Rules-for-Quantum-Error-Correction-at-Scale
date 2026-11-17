@@ -12,11 +12,14 @@ network has under 9,000 parameters and was trained by imitating a matching decod
 ## Results
 
 **1. Small lattices: errors are suppressed.** With bit flips of probability p on the data qubits and on the check
-readings in every round, the failure rate falls with lattice size at every p up to 1.8% for L = 5 to 19 (panel a).
-This uses the measurement protocol of [Lake, arXiv:2510.08056](https://arxiv.org/abs/2510.08056): L noisy rounds, then up to
-2L noiseless rounds of the rule. For comparison, Lake reports a threshold of about 1.5% for his hand-designed local
-decoder under depolarizing noise with measurement errors of equal strength, a related but not identical noise model.
-Ours is a finite-size crossing, not a threshold: including L = 27 and 39 it drifts down to about 1.7-1.8%.
+readings in every round, the failure rate falls with lattice size at every tested p through 1.8% for L = 5 to 19
+(panel a). This uses the measurement protocol of [Lake, arXiv:2510.08056](https://arxiv.org/abs/2510.08056): L noisy
+rounds, then up to 2L noiseless rounds of the rule. 1.8% is the highest tested noise rate at which failure fell across
+these sizes; it is not a threshold estimate, and including L = 27 and 39 the crossing drifts down to about 1.7-1.8%.
+Lake's hand-designed local decoder provides a published reference point, with a reported threshold of about 1.5%
+(rounded, from his own scoring convention). His released simulation code applies the same kind of noise as ours:
+independent bit flips on the data qubits and on the check readings
+([2d_windowed_simulation.jl](https://github.com/ethanlake/message-passing-decoders/blob/1b1fb16ebdfd634ba8a705142ae218a2638691d2/2d_windowed_simulation.jl#L289-L301)).
 Full table: [results/small-lattices-lake-protocol.md](results/small-lattices-lake-protocol.md).
 
 **2. Large lattices: the trend reverses.** At p = 1.6%, after L noisy rounds and 20L noiseless cleanup rounds:
