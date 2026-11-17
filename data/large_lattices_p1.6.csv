@@ -1,0 +1,7 @@
+# Large lattices at p = 1.6%: L noisy rounds + 20L noiseless cleanup rounds. Exact counts from
+# results/large-lattices-merged-output.md. strict = logical error or defects left; unresolved = defects left at 20L.
+# Model v10-big model_last.pt. SIMULATED.
+L,runs,strict_20L,unresolved_20L
+79,100000,244,211
+111,100000,521,451
+155,50000,1371,1354

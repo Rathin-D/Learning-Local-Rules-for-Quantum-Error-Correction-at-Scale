@@ -1,0 +1,25 @@
+# diag_largeL.py score tasks for diag1 (one line = one array task). v10-big. Seeds unique (checked by the job file).
+score --L 79 --p 0.016 --shots 1000 --batch 50 --seed 7901 --models model_last.pt,model.pt
+score --L 79 --p 0.016 --shots 1000 --batch 50 --seed 7902 --models model_last.pt,model.pt
+score --L 79 --p 0.016 --shots 1000 --batch 50 --seed 7903 --models model_last.pt,model.pt
+score --L 79 --p 0.016 --shots 1000 --batch 50 --seed 7904 --models model_last.pt,model.pt
+score --L 111 --p 0.016 --shots 500 --batch 32 --seed 11101 --models model_last.pt,model.pt --save 50
+score --L 111 --p 0.016 --shots 500 --batch 32 --seed 11102 --models model_last.pt,model.pt --save 50
+score --L 111 --p 0.016 --shots 500 --batch 32 --seed 11103 --models model_last.pt,model.pt --save 50
+score --L 111 --p 0.016 --shots 500 --batch 32 --seed 11104 --models model_last.pt,model.pt --save 50
+score --L 155 --p 0.016 --shots 250 --batch 32 --seed 15501 --models model_last.pt --save 50
+score --L 155 --p 0.016 --shots 250 --batch 32 --seed 15502 --models model_last.pt --save 50
+score --L 155 --p 0.016 --shots 250 --batch 32 --seed 15503 --models model_last.pt --save 50
+score --L 155 --p 0.016 --shots 250 --batch 32 --seed 15504 --models model_last.pt --save 50
+score --L 111 --p 0.017 --shots 900 --batch 32 --seed 11171 --models model_last.pt --save 50
+score --L 111 --p 0.017 --shots 900 --batch 32 --seed 11172 --models model_last.pt --save 50
+score --L 111 --p 0.017 --shots 900 --batch 32 --seed 11173 --models model_last.pt --save 50
+score --L 111 --p 0.017 --shots 900 --batch 32 --seed 11174 --models model_last.pt --save 50
+score --L 19 --p 0.016 --shots 4000 --batch 100 --seed 1916 --models model_last.pt
+score --L 27 --p 0.016 --shots 4000 --batch 100 --seed 2716 --models model_last.pt
+score --L 39 --p 0.016 --shots 4000 --batch 100 --seed 3916 --models model_last.pt
+score --L 55 --p 0.016 --shots 4000 --batch 100 --seed 5516 --models model_last.pt
+score --L 19 --p 0.018 --shots 4000 --batch 100 --seed 1918 --models model_last.pt
+score --L 27 --p 0.018 --shots 4000 --batch 100 --seed 2718 --models model_last.pt
+score --L 39 --p 0.018 --shots 4000 --batch 100 --seed 3918 --models model_last.pt
+score --L 55 --p 0.018 --shots 4000 --batch 100 --seed 5518 --models model_last.pt
